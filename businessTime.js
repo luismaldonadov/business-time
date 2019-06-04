@@ -3,7 +3,6 @@ const holiday = {
   end: new Date('2019-12-25T21:00:00')
 };
 
-
 /**
  *
  *
@@ -38,13 +37,8 @@ function addBusinessTime(holiday, time, duration) {
   return date;
 }
 
-function formatDateWithTimeZone(date) {
-  
-}
-
-
-console.log(addBusinessTime(holiday, new Date('2019-12-01T00:00:00'), 60 * 60)) // returns 2019-12-01T01:00:00
-console.log(addBusinessTime(holiday, new Date('2019-12-24T21:00:00'), 1)) // returns 2019-12-25T21:00:01
-console.log(addBusinessTime(holiday, new Date('2019-12-24T20:30:00'), 60 * 60)) // returns 2019-12-25T21:30:00
-console.log(addBusinessTime(holiday, new Date('2019-12-25T00:00:00'), 1)) // returns 2019-12-25T21:00:01
-console.log(addBusinessTime(holiday, new Date('2019-12-25T00:00:00'), -1)) // returns 2019-12-24T20:59:59
+console.log(addBusinessTime(holiday, new Date('2019-12-01T00:00:00'), 60 * 60)); // returns 2019-12-01T01:00:00
+console.log(addBusinessTime(holiday, new Date('2019-12-24T21:00:00'), 1)); // returns 2019-12-25T21:00:01
+console.log(addBusinessTime(holiday, new Date('2019-12-24T20:30:00'), 60 * 60)); // returns 2019-12-25T21:30:00
+console.log(addBusinessTime(holiday, new Date('2019-12-25T00:00:00'), 1)); // returns 2019-12-25T21:00:01
+console.log(addBusinessTime(holiday, new Date('2019-12-25T00:00:00'), -1)); // returns 2019-12-24T20:59:59
